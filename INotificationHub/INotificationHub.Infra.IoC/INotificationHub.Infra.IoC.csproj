@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog.Exceptions" Version="5.6.0" />
+    <PackageReference Include="Serilog.Sinks.ColoredConsole" Version="3.0.1" />
+    <PackageReference Include="Serilog.Sinks.RollingFile" Version="3.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\INotificationHub.Domain.Core\INotificationHub.Domain.Core.csproj" />
+    <ProjectReference Include="..\INotificationHub.Infra.Bus\INotificationHub.Infra.Bus.csproj" />
+    <ProjectReference Include="..\INotificationHub.NotificationHub.Data\INotificationHub.NotificationHub.Data.csproj" />
+    <ProjectReference Include="..\INotificationHub.NotificationHub.Domain\INotificationHub.NotificationHub.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
