@@ -24,7 +24,7 @@ jobs:
     - name: Display Folders
       run: dir *.*
     - name: Install dependencies
-      run: cd INotificationHub dotnet restore
+      run: dotnet restore "INotificationHub/INotificationHub.sln"
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Test
