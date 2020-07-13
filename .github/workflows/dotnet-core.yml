@@ -24,7 +24,7 @@ jobs:
     - name: Display Folders
       run: dir *.*
     - name: Install dependencies
-      run: dotnet restore
+      run: cd INotificationHub dotnet restore
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Test
