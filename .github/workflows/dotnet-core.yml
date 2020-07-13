@@ -19,6 +19,8 @@ jobs:
         dotnet-version: 3.1.101
     - name: Go to Folder
       run: cd INotificationHub
+    - name: Display Folders
+      run: dir *.*
     - name: Install dependencies
       run: dotnet restore
     - name: Build
