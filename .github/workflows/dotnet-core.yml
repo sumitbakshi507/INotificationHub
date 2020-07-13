@@ -18,7 +18,7 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Go to Folder
-      run: cd INotificationHub
+      run: cd INotificationHub/INotificationHub
     - name: Display Folders
       run: dir *.*
     - name: Install dependencies
